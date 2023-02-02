@@ -18,6 +18,10 @@ const UserCard = () => {
           <img src="avatar.png" className={styles.avatar}></img>
           <div className={styles.userTitle}>Report For</div>
           <div className={styles.userSubTitle}>Best Sales</div>
+          <div className={styles.userInfoMobile}>
+            <div className={styles.userTitleMobile}>Report For</div>
+            <div className={styles.userSubTitleMobile}>Best Sales</div>
+          </div>
         </div>
         <div className={styles.links}>
           {links.map((link, index) => (
