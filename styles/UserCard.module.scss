@@ -1,0 +1,62 @@
+.container {
+  position: relative;
+  width: 255px;
+  height: 518px;
+  border-radius: 15px;
+  background-color: #1c204b;
+  color: #fff;
+  margin: 0 30px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.userInfo {
+  background-color: #5747ea;
+  height: 354px;
+  width: 255px;
+  overflow: hidden;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.avatar {
+  margin: 32px auto;
+  align-self: center;
+  justify-self: center;
+  width: 138px;
+  height: 145px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+.userTitle {
+  margin-left: 23px;
+  margin-bottom: 10px;
+  color: #bbc0ff;
+  font-weight: 400;
+  font-size: 15px;
+}
+.userSubTitle {
+  margin-left: 21px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 12px;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-left: 32px;
+  margin-top: 26px;
+  a {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10.5px;
+  }
+}
+.activeLink {
+  color: #fff;
+}
+.idleLink {
+  color: #7078c9;
+}

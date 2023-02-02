@@ -1,0 +1,38 @@
+$s-min: 20;
+$s-max: 70;
+$l-min: 30;
+$l-max: 90;
+
+@for $i from 1 through 100 {
+  .homeGrid:nth-child(#{$i}) .container {
+    background-color: hsl(random(360), $s-min + random($s-max + -$s-min), $l-min + random($l-max + -$l-min));
+  }
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin-top: min(5%, 239px);
+  @media (max-width: 320px) {
+    flex-direction: column;
+    justify-content: unset;
+  }
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: fit-content;
+
+  @media (max-width: 320px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
