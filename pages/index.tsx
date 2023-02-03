@@ -1,6 +1,5 @@
 import ProductCard, { ProductDetails } from "components/ProductCard";
 import UserCard from "components/UserCard";
-//@ts-ignore
 import { Fade } from "react-reveal";
 import styles from "styles/Home.module.scss";
 
