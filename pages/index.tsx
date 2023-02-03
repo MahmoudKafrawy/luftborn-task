@@ -1,6 +1,7 @@
 import ProductCard, { ProductDetails } from "components/ProductCard";
 import UserCard from "components/UserCard";
-import Fade from "react-reveal/Fade";
+//@ts-ignore
+import { Fade } from "react-reveal";
 import styles from "styles/Home.module.scss";
 
 const Home: React.FC<{ products: ProductDetails[] }> = ({ products }) => {
