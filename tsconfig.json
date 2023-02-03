@@ -21,6 +21,7 @@
     "incremental": true
   },
   "include": [
+    "src", "decs.d.ts",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
