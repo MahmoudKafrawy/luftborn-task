@@ -24,7 +24,7 @@ const ProductCard: React.FC<{ productDetails: ProductDetails }> = ({ productDeta
           <div className={styles.title}>{textShrink(productDetails?.category, 20)}</div>
           <div className={styles.dots}>
             {[1, 2, 3].map((dot) => (
-              <div className={styles.dot}></div>
+              <div key={dot} className={styles.dot}></div>
             ))}
           </div>
         </div>
