@@ -1,14 +1,17 @@
+@import "variables";
 .container {
   position: relative;
   width: 255px;
   height: 518px;
-  border-radius: 15px;
+  border-radius: $base-radius;
   background-color: #1c204b;
   color: #fff;
   margin: 0 30px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  margin-left: 4vw;
+
   @media (max-width: 400px) {
     width: 327px;
     height: 203px;
@@ -19,7 +22,7 @@
   height: 354px;
   width: 255px;
   overflow: hidden;
-  border-radius: 15px;
+  border-radius: $base-radius;
   display: flex;
   flex-direction: column;
   @media (max-width: 400px) {
@@ -39,7 +42,9 @@
   border: 5px solid #fff;
   box-shadow: 1px 1px 7px 0px #00000080;
   @media (max-width: 400px) {
-    margin: 10px;
+    margin: 0;
+    margin-left: 32px;
+    margin-right: 20px;
     width: 64px;
     height: 64px;
   }
@@ -93,6 +98,7 @@
   font-weight: 300;
   @media (min-width: 400px) {
     display: none;
+    margin-top: 4px;
   }
 }
 .userTitleMobile {

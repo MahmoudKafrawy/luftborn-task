@@ -2,7 +2,7 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  margin-top: min(5%, 239px);
+  margin-top: min(4vw, 239px);
   @media (max-width: 600px) {
     display: flex;
     flex-wrap: wrap;
@@ -20,7 +20,6 @@
   align-content: flex-start;
   gap: 30px;
   width: fit-content;
-
   @media (max-width: 600px) {
     display: flex;
     justify-content: center;

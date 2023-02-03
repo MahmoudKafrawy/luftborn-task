@@ -1,1 +1,1 @@
-export const toPriceForm = (number: number) => `${number.toFixed(2)} $`;
+export const toPriceForm = (number: number) => `${number.toFixed(2)}$`;

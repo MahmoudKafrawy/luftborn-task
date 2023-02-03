@@ -3,16 +3,17 @@
   justify-content: flex-end;
   flex-direction: column;
   width: 255px;
-  height: 241px;
+  height: 244px;
   border-radius: 15px;
   background-color: #4bcf82;
   color: #fff;
   overflow: hidden;
   @media (max-width: 400px) {
     width: 327px;
+    height: 150px;
   }
 }
-.category {
+.card {
   width: 255px;
   height: 199px;
   border-top-left-radius: 15px;
@@ -21,19 +22,25 @@
   color: #fff;
   @media (max-width: 400px) {
     width: 327px;
+    height: 122px;
   }
 }
 .title {
-  margin-top: 37px;
-  margin-left: 30px;
   font-weight: 500;
   font-size: 15px;
+  @media (max-width: 400px) {
+    margin-left: 0px;
+  }
 }
 .price {
   margin-top: 25px;
   margin-left: 30px;
   font-size: 39px;
   font-weight: 300;
+  @media (max-width: 400px) {
+    margin-left: 24px;
+    margin-top: 4px;
+  }
 }
 .description {
   margin: 12px 15px 10px 30px;
@@ -41,19 +48,72 @@
   font-weight: 400;
   color: #bbc0ff;
   line-height: 14.22px;
+  max-width: 125px;
+  @media (max-width: 400px) {
+    display: none;
+  }
 }
 .inStore {
   margin-right: 14px;
   margin-top: 12px;
-  font-size: 17px;
+  font-size: 12px;
   font-weight: 500;
   color: #fff;
   line-height: 14.22px;
+  justify-content: flex-end;
+  @media (max-width: 400px) {
+    display: none;
+  }
 }
 .inStoreNumber {
   margin-right: 14px;
-  font-size: 17px;
+  font-size: 12px;
   font-weight: 500;
   color: #fff;
   line-height: 14.22px;
+  @media (max-width: 400px) {
+    display: none;
+  }
+}
+.options {
+  margin-top: 37px;
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  justify-content: space-between;
+  @media (max-width: 400px) {
+    margin-top: 28px;
+    margin-left: 24px;
+  }
+}
+.dots {
+  display: flex;
+  gap: 3px;
+  cursor: pointer;
+  margin-right: 30px;
+  @media (max-width: 400px) {
+    margin-right: 24px;
+  }
+}
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: #d8d8d8;
+  border-radius: 50%;
+}
+.descriptionContainerMobile {
+  display: flex;
+  justify-content: space-between;
+}
+.descriptionMobile {
+  justify-self: flex-end;
+  margin: 12px 24px 10px 8px;
+  font-size: 12px;
+  font-weight: 400;
+  max-width: 120px;
+  color: #bbc0ff;
+  line-height: 14.22px;
+  @media (min-width: 400px) {
+    display: none;
+  }
 }
